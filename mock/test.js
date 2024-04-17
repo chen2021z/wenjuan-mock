@@ -7,7 +7,7 @@ module.exports = [
         url: '/api/test',
         method: 'get',
         response() {
-            return {
+            return { 
                 errno: 0,
                 data: {
                     name: Random.cname()
