@@ -41,11 +41,15 @@ module.exports = [
   {
     url: "/api/question",
     method: "get",
-    response() {
+    response(ctx) {
+      const { url = "" } = ctx;
+      const isDeleted = url.includes("isDeleted=true");
+      const isStar = url.includes("isStar=true");
+
       return {
         errno: 0,
         data: {
-          list: getQuestionList(), // 当前页数据
+          list: getQuestionList({ isDeleted, isStar }), // 当前页数据
           total: 100,
         },
       };
