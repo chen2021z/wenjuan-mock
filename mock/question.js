@@ -58,11 +58,11 @@ module.exports = [
   },
   // 更新问卷
   {
-    url: "api/question/:id",
+    url: "/api/question/:id",
     method: "patch",
     response() {
       return {
-        error: 0,
+        errno: 0,
       };
     },
   },
