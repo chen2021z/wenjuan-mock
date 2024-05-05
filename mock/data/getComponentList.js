@@ -9,14 +9,14 @@ const Random = Mock.Random;
 function getComponentList() {
   return [
     // Info
-    // {
-    //   fe_id: "c1", // 注意，由于统计页，左侧和中间需要数据完全一直，所以要写死 fe_id ，不能用 Random.id()
-    //   type: "questionInfo", // 组件类型，不能重复，前后端统一好
-    //   title: "问卷信息",
-    //   isHidden: false,
-    //   isLocked: false,
-    //   props: { title: "问卷标题", desc: "问卷描述..." },
-    // },
+    {
+      fe_id: "c1", // 注意，由于统计页，左侧和中间需要数据完全一直，所以要写死 fe_id ，不能用 Random.id()
+      type: "questionInfo", // 组件类型，不能重复，前后端统一好
+      title: "问卷信息",
+      isHidden: false,
+      isLocked: false,
+      props: { title: "问卷标题", desc: "问卷描述..." },
+    },
     // Title
     {
       fe_id: "c2",
@@ -53,16 +53,16 @@ function getComponentList() {
     //   isLocked: false,
     //   props: { title: "你的爱好", placeholder: "请输入..." },
     // },
-    // // Paragraph
-    // {
-    //   fe_id: "c6",
-    //   type: "questionParagraph",
-    //   title: "段落",
-    //   isHidden: false,
-    //   isLocked: false,
-    //   props: { text: "一行段落1\n一行段落2", isCenter: false },
-    // },
-    // // Radio
+    // Paragraph
+    {
+      fe_id: "c6",
+      type: "questionParagraph",
+      title: "段落",
+      isHidden: false,
+      isLocked: false,
+      props: { text: "一行段落1\n一行段落2", isCenter: false },
+    },
+    // Radio
     // {
     //   fe_id: "c7",
     //   type: "questionRadio",
