@@ -45,14 +45,14 @@ function getComponentList() {
       props: { title: "你的电话", placeholder: "请输入电话..." },
     },
     // Textarea
-    // {
-    //   fe_id: "c5",
-    //   type: "questionTextarea",
-    //   title: "多行输入",
-    //   isHidden: false,
-    //   isLocked: false,
-    //   props: { title: "你的爱好", placeholder: "请输入..." },
-    // },
+    {
+      fe_id: "c5",
+      type: "questionTextarea",
+      title: "多行输入",
+      isHidden: false,
+      isLocked: false,
+      props: { title: "你的爱好", placeholder: "请输入..." },
+    },
     // Paragraph
     {
       fe_id: "c6",
