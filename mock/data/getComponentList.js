@@ -30,7 +30,7 @@ function getComponentList() {
     {
       fe_id: "c3",
       type: "questionInput",
-      title: "输入框1",
+      title: "输入框",
       isHidden: false,
       isLocked: false,
       props: { title: "你的姓名", placeholder: "请输入姓名..." },
